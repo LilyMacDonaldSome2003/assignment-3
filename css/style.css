@@ -1,0 +1,85 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.wrapper {
+    display: flex;
+    margin: 0 auto;
+}
+
+
+header div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000;  
+  color: #fff;
+  padding: 9px;
+  
+}
+
+
+nav ul {
+   display: flex;
+   list-style: none;
+   
+}
+
+nav ul li a:link,
+nav ul li a:visited {
+  display: inline-block;
+  padding: .6em 1em;
+  margin-left: .6em;
+  color: #fff;
+  text-decoration: none;
+  
+}
+
+#hero {
+   display: flexbox; 
+   text-align: center;
+   height: 600px;
+   background-image: url(../images/hands-typing.jpg);
+   background-size: cover;
+   background-position:0%;
+
+}
+
+
+#about-me .wrapper {
+    
+    max-width: 940px;
+    display: flex;
+    
+}
+
+#services .wrapper {
+  max-width: 940px;
+  background-color: #fafafa;
+  align-self: center;  
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  /*   Displays three columns */
+    gap: 40px;
+}
+
+
+.grid article {
+    background-color: #fff;
+    padding: 1em;
+    
+    display: flex;
+    flex-direction: column;
+  /*   everything is down where it should be */
+    align-items: flex-start;
+}
