@@ -104,6 +104,14 @@ a.btn {
   
 }
 
+a.btn:hover {
+  background-color: white; 
+  color: #000; 
+  padding: 20px; 
+  border-radius: 5px; 
+  
+}
+
 .grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -121,4 +129,16 @@ a.btn {
   /*   everything is down where it should be */
     align-items: flex-start;
 }
+
+#work .wrapper {
+  display: grid;
+  max-width: 940px;
+  text-align: center;
+  justify-self: center;
+  align-self: center;
+  
+}
+
+
+
 
