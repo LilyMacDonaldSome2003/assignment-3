@@ -22,6 +22,8 @@ header div {
   background-color: #000;  
   color: #fff;
   padding: 9px;
+  padding-left: 25px;
+  padding-right: 25px;
   
 }
 
@@ -62,6 +64,8 @@ h1 {
   text-align: center;
   justify-self: center;
   align-self: center;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 
@@ -74,19 +78,26 @@ h1 {
   padding-bottom: auto;
 }
 
+
 #services .wrapper {
   display: grid;
   max-width: 940px;
   background-color: #fafafa;
   align-self: center;  
   text-align: center;
-  
+  padding: 2em 0;
+  column-gap: 40px;
+}
+
+.wrapper h2{
+  font-size: 40px;
+      
 }
 
 h3 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: auto;
+  gap: 10px;
   font-size: 25px;
   text-align: start;
 }
@@ -94,6 +105,7 @@ h3 {
 article {
   display: flexbox;
   flex-direction: column;
+
 }
 
 a.btn {
@@ -101,7 +113,7 @@ a.btn {
   color: #fff; 
   padding: 20px; 
   border-radius: 5px; 
-  
+  margin: auto;
 }
 
 a.btn:hover {
@@ -128,6 +140,7 @@ a.btn:hover {
     flex-direction: column;
   /*   everything is down where it should be */
     align-items: flex-start;
+    
 }
 
 #work .wrapper {
@@ -137,6 +150,48 @@ a.btn:hover {
   justify-self: center;
   align-self: center;
   
+}
+
+.image {
+  display: grid;
+  grid-template-columns: (6, 1fr);
+  grid-template-rows: (4, 1fr);
+  grid-template-areas: 
+  "div1 div1 div1 div2 div2 div2"
+  "div1 div1 div1 div2 div2 div2"
+  "div3 div3 div4 div4 div5 div5"
+  "div3 div3 div4 div4 div5 div5"
+  ;
+}
+
+.image .img:nth-child(1) {
+  grid-area: div1;
+}
+
+.image .img:nth-child(2) {
+  grid-area: div2;
+}
+
+.image .img:nth-child(3) {
+  grid-area: div3;
+}
+
+.image .img:nth-child(4) {
+  grid-area: div4;
+}
+
+.image .img:nth-child(5) {
+  grid-area: div5;
+}
+
+
+
+footer {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 
